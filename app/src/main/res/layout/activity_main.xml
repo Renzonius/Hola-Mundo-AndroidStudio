@@ -18,15 +18,17 @@
         android:textSize="20dp"
         android:padding="16dp"
         android:textColor="@color/black"
-        android:text="¿Cuanto años tenes?"/>
+        android:text="@string/cuanto_a_os_tenes"/>
     
     <EditText
+        android:id="@+id/años_edit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:hint="Mi Edad"/>
+        android:hint="@string/mi_edad"/>
 
     <TextView
+        android:id="@+id/resultado_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="16dp"
@@ -37,10 +39,11 @@
 
 
     <Button
+        android:id="@+id/boton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Calcular"/>
+        android:text="@string/calcular"/>
 
 
 

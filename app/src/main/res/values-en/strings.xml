@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="result_format">If you were a cat, you would be %d years old</string>
+    <string name="Debes_insertar_una_edad">You have to insert an age.</string>
+    <string name="calcular">Calculate</string>
+    <string name="mi_edad">You age</string>
+    <string name="cuanto_a_os_tenes">How old are you?</string>
+</resources>

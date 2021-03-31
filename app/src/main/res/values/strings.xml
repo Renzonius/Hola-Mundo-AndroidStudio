@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">MichisApp</string>
+    <string name="app_name" translatable="false">MichisApp</string>
+    <string name="result_format">Si fueras gato, tu edad sería: %d año/s</string>
+    <string name="Debes_insertar_una_edad">Debes insertar una edad</string>
+    <string name="calcular">Calcular</string>
+    <string name="mi_edad">Mi Edad</string>
+    <string name="cuanto_a_os_tenes">¿Cuanto años tenes?</string>
 </resources>
