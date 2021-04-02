@@ -1,50 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-    <ImageView
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/michis_app"
-        android:adjustViewBounds="true"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:padding="16dp"
-        android:textColor="@color/black"
-        android:text="@string/cuanto_a_os_tenes"/>
-    
-    <EditText
-        android:id="@+id/años_edit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:hint="@string/mi_edad"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/michis_app"
+            android:adjustViewBounds="true" />
 
-    <TextView
-        android:id="@+id/resultado_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="16dp"
-        android:padding="16dp"
-        android:gravity="center_horizontal"
-        android:textColor="@color/black"
-        android:text=""/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:text="@string/cuanto_a_os_tenes" />
 
+        <EditText
+            android:id="@+id/edad_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:hint="@string/mi_edad" />
 
-    <Button
-        android:id="@+id/boton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="@string/calcular"/>
+        <TextView
+            android:id="@+id/resultado_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:padding="16dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:text="" />
 
 
+        <Button
+            android:id="@+id/boton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/calcular" />
 
-</LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -10,26 +10,25 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.michisapp.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        ActivityMainBinding bindig = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(bindig.getRoot());
 
-        EditText edadEdit = findViewById(R.id.años_edit);
-        TextView resulText = findViewById(R.id.resultado_text);
-        Button boton = findViewById(R.id.boton);
-
-        boton.setOnClickListener(v -> {
-            String edad = edadEdit.getText().toString();
+        bindig.boton.setOnClickListener(v -> {
+            String edad = bindig.edadEdit.getText().toString();
             if(!edad.isEmpty()){
                 int edadValor = Integer.parseInt(edad);
 
                 int resul = edadValor * 7;
                 String resultado = getString(R.string.result_format, resul);
-                resulText.setText(resultado);
+                bindig.resultadoText.setText(resultado);
 
             } else{
                 Log.d("ActividadPrincipal", "El campo no tiene contenido ");
